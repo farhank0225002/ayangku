@@ -1,0 +1,81 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background: linear-gradient(
+      rgba(255, 230, 242, 0.8),
+      rgba(255, 230, 242, 0.8)
+    ),
+    url(pattern.avif);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#welcome-message {
+  font-size: 24px;
+  color: #545454;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 18px;
+  color: #545454;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: #ff4081;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ff97c8;
+}
+
+.love-note {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.love-note.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
